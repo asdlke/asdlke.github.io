@@ -1,0 +1,13 @@
+.resume{
+    
+    justify-content: center;
+}
+nav{
+    display:flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+nav img{
+    width: 1000px;
+}
