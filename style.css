@@ -2,6 +2,7 @@
     margin:0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
 }
 .header{
     min-height: 100vh;
@@ -11,6 +12,18 @@
     background-position: center;
     background-size: cover;
     position:relative;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    
+    padding: 8px 12px;
+    width: 87.08%;
+    color: #777;
+}
+.sticky + .content {
+    padding: 20px;
+    color: #777;
 }
 nav{
     display:flex;
@@ -24,6 +37,7 @@ nav img{
 .nav-links{
     flex: 1;
     text-align: right;
+    color: #777;
 }
 .nav-links ul li{
     list-style: none;
@@ -138,7 +152,7 @@ nav .fa{
     padding-bottom: 300px;
     text-align: center;
     padding-top: 200px;
-    
+    scroll-behavior: smooth !important;
 }
 h4{
     font-size: 64px;
@@ -268,4 +282,33 @@ h6{
     padding: 20px 20px;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
 }
-
+.tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background-color: #ffa4a4;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: #ffa4a4;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.Licon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
