@@ -11,7 +11,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-color: antiquewhite;
+    background-color: #e8dff5;
     
     background-position: center;
     background-size: cover;
@@ -113,9 +113,9 @@ nav img{
     background: #f44336;
     position: relative;
     cursor: pointer; */
-    border: 1px solid #66a51d;
+    border: 1px solid #7cb5ff;
     transition: 1s;
-    background-color: #66a51d;
+    background-color: #7cb5ff;
 }
 nav .fa{
     display:none;
@@ -130,7 +130,7 @@ nav .fa{
     }
     .nav-links{
         position: absolute;
-        background: #fe928a;
+        background: #e8dff5;/*change asdf */
         height: 100vh;
         width: 200px;
         transition: 1s;
@@ -165,7 +165,7 @@ nav .fa{
     
     width: 100%;
     margin: auto;
-    
+    background-color: #fce1e4;
     padding-bottom: 300px;
     text-align: center;
     padding-top: 200px;
@@ -184,8 +184,8 @@ h4{
     text-align: center;
     padding-top: 100px;
     padding-bottom: 200px;
-    background-color: antiquewhite;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    background-color: #fcf4dd;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
 }
 h1{
     padding-top: 200px;
@@ -258,22 +258,22 @@ h6{
     font-size: 70px;
 }
 .Contact-Me{
-    background-color: antiquewhite;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    background-color: #daeaf6;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
     
 }
 .contact{
     margin-top: 5%;
     display: flex;
     justify-content: center;
-    background-color: antiquewhite;
+    background-color: #daeaf6;
 
 }
 
 .Licon{
     text-decoration: none;
     position: relative;
-    background-color: #ffffff;
+    background-color: #ddedea;
     font-size: 80px;
     color: #ffa4a4;
     transition: 0.5s;
@@ -283,12 +283,18 @@ h6{
     margin-bottom: -10%;
     font-size: 100px;
 }
+.Language{
+    background-color: #ddedea;
+    padding-bottom: 10%;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+}
 .languages{
     width: 85%;
     margin: auto;
     margin-top: 5%;
-    margin-bottom: 10%;
+    
     display: flex;
+   
     justify-content: space-between;
     
 }
